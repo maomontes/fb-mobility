@@ -1,0 +1,26 @@
+---
+title: "mobility"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+```{r}
+library(tidyverse)
+
+
+# df <- read.delim("data/movement-range-2021-06-02.txt", sep = "\t")
+# 
+# df <- as_tibble(df)
+# 
+# saveRDS(df, file = "data/fb-mobility.RDS")
+# 
+# df %>% 
+#   filter(country == "COL") %>% 
+#   saveRDS(., file = "data/fb_mob_col.RDS")
+
+df_col <- readRDS("data/fb_mob_col.RDS")
+```
+
